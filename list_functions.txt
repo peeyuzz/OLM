@@ -1,0 +1,38 @@
+Web Interaction Functions-
+
+open_browser(url): Opens a web browser at the specified URL.
+navigate_to_website(url): Navigates to a specific URL within an open browser.
+find_element_by_id(id): Finds an HTML element by its ID.
+find_element_by_xpath(xpath): Finds an HTML element by its XPath.
+click_element(element): Clicks on a given HTML element.
+input_text(element, text): Inputs text into an HTML element.
+submit_form(form): Submits an HTML form.
+get_page_content(): Retrieves the content of the current page.
+extract_data_from_page(pattern): Extracts data from a webpage using a specified pattern.
+
+Data Processing Functions-
+load_json(file): Loads JSON data from a file.
+parse_json(data): Parses JSON data into a Python object.
+save_data_to_file(data, file): Saves data to a file in a specific format (e.g., JSON, CSV).
+calculate_distance(location1, location2): Calculates the distance between two locations.
+convert_time_zone(time, from_tz, to_tz): Converts a time from one time zone to another.
+format_date(date, format): Formats a date according to a specified format.
+
+System Functions-
+send_email(to, subject, body): Sends an email.
+send_sms(to, message): Sends an SMS message.
+make_system_call(command): Executes a system command.
+get_current_time(): Gets the current time.
+get_user_input(prompt): Prompts the user for input.
+
+Task-Specific Functions-
+search_flights(source, destination, date): Searches for flights between specified locations and dates.
+book_flight(flight_id): Books a flight using a given flight ID.
+find_restaurants(location, cuisine): Finds restaurants in a given location with a specified cuisine.
+make_reservation(restaurant, date, time): Makes a reservation at a restaurant.
+get_weather_forecast(location): Gets the weather forecast for a given location.
+find_directions(source, destination): Finds directions between two locations.
+play_music(song): Plays a specified song.
+set_alarm(time): Sets an alarm.
+create_calendar_event(title, date, time): Creates a calendar event.
+send_message_to_contact(contact, message): Sends a message to a contact.
