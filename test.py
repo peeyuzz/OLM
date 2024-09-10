@@ -76,35 +76,6 @@ def identify_independent_tasks(user_task):
     response = gemini_query(prompt)
     return eval(response)  
 
-# def a_star_search(start, goal, dependencies):
-#     frontier = PriorityQueue()
-#     frontier.put((0, start))
-#     came_from = {start: None}
-#     cost_so_far = {start: 0}
-    
-#     while not frontier.empty():
-#         current = frontier.get()[1]
-        
-#         if current == goal:
-#             break
-        
-#         for next in function_registry().keys():
-#             if current in dependencies.get(next, []):
-#                 new_cost = cost_so_far[current] + 1
-#                 if next not in cost_so_far or new_cost < cost_so_far[next]:
-#                     cost_so_far[next] = new_cost
-#                     priority = new_cost + 1 
-#                     frontier.put((priority, next))
-#                     came_from[next] = current
-    
-#     path = []
-#     current = goal
-#     while current != start:
-#         path.append(current)
-#         current = came_from[current]
-#     path.append(start)
-#     path.reverse()
-#     return path
 
 def a_star_search(start, goal, dependencies):
     frontier = PriorityQueue()
